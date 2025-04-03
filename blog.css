@@ -1,7 +1,11 @@
 body {
     font-family: 'Liberation Serif', 'Linux Libertine', Georgia, Times, serif;
-    background-color: #f8f9fa;
-    color: #202122;
+    background-color: #FFE4E1;
+    background-image: url('nubes.jpeg'); /* Imagen de marca de agua */
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: left 50%;
+    color: #333;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -10,41 +14,39 @@ body {
 .container {
     max-width: 1000px;
     margin: 0 auto;
-    background-color: white;
+    background-color: #FFF8DC;
     padding: 20px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
 .header {
-    border-bottom: 1px solid #a2a9b1;
+    border-bottom: 2px solid #FFB6C1;
     padding-bottom: 0.5em;
     margin-bottom: 1em;
 }
 
-h1 {
+h1, h2, h3 {
     font-family: 'Linux Libertine', Georgia, Times, serif;
     font-weight: normal;
-    border-bottom: 1px solid #a2a9b1;
-    font-size: 1.8em;
-    margin: 0;
+    color: #FF69B4;
+}
+
+h1 {
+    font-size: 2em;
+    border-bottom: 2px solid #FFB6C1;
     padding-bottom: 0.25em;
 }
 
 h2 {
-    font-size: 1.5em;
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
-    font-weight: normal;
-    border-bottom: 1px solid #a2a9b1;
-    padding-bottom: 0.17em;
-    overflow: hidden;
+    font-size: 1.75em;
+    border-bottom: 2px solid #FFD700;
+    padding-bottom: 0.2em;
 }
 
 h3 {
-    font-size: 1.2em;
-    margin-top: 1.2em;
-    margin-bottom: 0.3em;
-    font-weight: normal;
+    font-size: 1.5em;
+    color: #32CD32;
 }
 
 p {
@@ -52,185 +54,118 @@ p {
 }
 
 .toc {
-    background-color: #f8f9fa;
-    border: 1px solid #a2a9b1;
+    background-color: #B0E0E6;
+    border: 2px solid #4682B4;
     padding: 10px;
     display: inline-block;
     margin: 1em 0;
 }
 
-.toc-title {
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 0.5em;
-}
-
-.toc ul {
-    margin: 0.3em 0;
-    padding-left: 30px;
-}
-
-.toc li {
-    margin-bottom: 0.1em;
-}
-
-.reference {
-    font-size: 0.85em;
-    vertical-align: super;
-}
-
-.references {
-    border-top: 1px solid #a2a9b1;
-    margin-top: 1.5em;
-    padding-top: 0.5em;
-}
-
-.references ol {
-    font-size: 0.9em;
-}
-
-.references li {
-    margin-bottom: 0.5em;
-}
-
 .infobox {
     float: right;
     margin: 0 0 1em 1em;
-    background-color: #f8f9fa;
-    border: 1px solid #a2a9b1;
+    background-color: #FFDAB9;
+    border: 2px solid #FFA07A;
     padding: 10px;
     width: 270px;
     font-size: 0.9em;
-}
-
-.infobox-title {
-    text-align: center;
-    font-size: 1.2em;
-    margin-bottom: 0.5em;
-    background-color: #eaecf0;
-    padding: 5px;
-}
-
-.infobox-image {
-    text-align: center;
-    margin-bottom: 0.5em;
-}
-
-.infobox table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.infobox th {
-    text-align: left;
-    vertical-align: top;
-    width: 40%;
-    padding: 3px;
-}
-
-.infobox td {
-    padding: 3px;
+    border-radius: 10px;
 }
 
 a {
-    color: #0645ad;
+    color: #FF4500;
     text-decoration: none;
+    font-weight: bold;
 }
 
 a:hover {
     text-decoration: underline;
+    color: #DC143C;
 }
 
-.categories {
-    border-top: 1px solid #a2a9b1;
-    margin-top: 2em;
-    padding-top: 0.5em;
-    font-size: 0.9em;
-}
-
-/* Estilos para listas desplegables */
-.collapsible {
-    background-color: #f8f9fa;
-    cursor: pointer;
+.collapsible, .accordion {
+    background-color: #E6E6FA;
+    border: 2px solid #9370DB;
+    color: #4B0082;
     padding: 10px;
+    border-radius: 5px;
+}
+
+.active, .collapsible:hover, .accordion:hover {
+    background-color: #D8BFD8;
+}
+/* Estilos generales del acordeón */
+.accordion {
+    background-color: #E6E6FA;
+    border: 2px solid #9370DB;
+    color: #4B0082;
+    cursor: pointer;
+    padding: 12px 15px;
     width: 100%;
-    border: none;
     text-align: left;
     outline: none;
-    font-size: 1em;
-    border: 1px solid #a2a9b1;
-    border-radius: 2px;
-    margin: 10px 0;
+    font-size: 1.1em;
+    transition: 0.4s;
+    border-radius: 5px;
+    margin: 5px 0;
     position: relative;
 }
 
-.active, .collapsible:hover {
-    background-color: #eaecf0;
+.active, .accordion:hover {
+    background-color: #D8BFD8;
 }
 
-.content {
-    padding: 0 18px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    background-color: white;
-    border-left: 1px solid #a2a9b1;
-    border-right: 1px solid #a2a9b1;
-    border-bottom: 1px solid #a2a9b1;
-    margin-top: -10px;
-    margin-bottom: 10px;
-}
-
-.collapsible:after {
-    content: '\02795';
-    font-size: 13px;
-    color: #666;
+/* Agregar flecha indicadora */
+.accordion:after {
+    content: '\002B'; /* Signo de más */
+    color: #4B0082;
+    font-weight: bold;
     float: right;
     margin-left: 5px;
 }
 
 .active:after {
-    content: "\2796";
+    content: "\2212"; /* Signo de menos */
 }
 
-/* Estilos para lista desplegable tipo acordeón */
-.accordion {
-    background-color: #f8f9fa;
-    color: #202122;
-    cursor: pointer;
-    padding: 12px;
-    width: 100%;
-    text-align: left;
-    border: 1px solid #a2a9b1;
-    outline: none;
-    transition: 0.4s;
-    margin: 2px 0;
-    font-size: 1em;
-}
-
-.accordion.active, .accordion:hover {
-    background-color: #eaecf0;
-}
-
+/* Panel que se muestra/oculta */
 .panel {
-    padding: 0 18px;
-    background-color: white;
+    padding: 0;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    border-left: 1px solid #a2a9b1;
-    border-right: 1px solid #a2a9b1;
-    border-bottom: 1px solid #a2a9b1;
+    transition: max-height 0.3s ease-out;
+    background-color: #FFF0F5;
+    border-left: 2px solid #9370DB;
+    border-right: 2px solid #9370DB;
+    border-bottom: 2px solid #9370DB;
+    border-radius: 0 0 5px 5px;
+    margin-top: -5px;
+    margin-bottom: 10px;
 }
 
-.accordion:after {
-    content: '\02795';
-    font-size: 13px;
-    color: #666;
-    float: right;
-    margin-left: 5px;
+/* Contenido dentro del panel */
+.panel div, .panel p, .panel ul {
+    padding: 10px 15px;
+    margin: 0;
 }
 
-.accordion.active:after {
-    content: "\2796";
+/* Estilos para los contenedores de video */
+.video-container {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #F0FFFF;
+    border-radius: 5px;
+    border: 1px solid #ADD8E6;
+}
+
+.video-container h4 {
+    margin-top: 0;
+    color: #4169E1;
+}
+
+/* Estilo para los controles de video */
+video {
+    max-width: 100%;
+    border: 2px solid #9370DB;
+    border-radius: 5px;
 }
