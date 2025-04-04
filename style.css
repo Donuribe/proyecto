@@ -1,6 +1,7 @@
 body {
     font-family: 'Liberation Serif', 'Linux Libertine', Georgia, Times, serif;
-    background-color: #FFE4E1;
+    background-color: 
+#FFE4E1;
     background-image: url('nubes.jpeg'); /* Imagen de marca de agua */
     background-repeat: no-repeat;
     background-position: left;
@@ -14,14 +15,16 @@ body {
 .container {
     max-width: 1000px;
     margin: 0 auto;
-    background-color: #FFF8DC;
+    background-color: 
+#FFF8DC;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
 }
 
 .header {
-    border-bottom: 2px solid #FFB6C1;
+    border-bottom: 2px solid 
+#FFB6C1;
     padding-bottom: 0.5em;
     margin-bottom: 1em;
 }
@@ -29,33 +32,39 @@ body {
 h1, h2, h3 {
     font-family: 'Linux Libertine', Georgia, Times, serif;
     font-weight: normal;
-    color: #FF69B4;
+    color: 
+#FF69B4;
 }
 
 h1 {
     font-size: 2em;
-    border-bottom: 2px solid #FFB6C1;
+    border-bottom: 2px solid 
+#FFB6C1;
     padding-bottom: 0.25em;
 }
 
 h2 {
     font-size: 1.75em;
-    border-bottom: 2px solid #FFD700;
+    border-bottom: 2px solid 
+#FFD700;
     padding-bottom: 0.2em;
 }
 
 h3 {
     font-size: 1.5em;
-    color: #32CD32;
+    color: 
+#32CD32;
 }
 
 p {
-    margin: 0.5em 0 1em 0;
+    margin: 1px;
 }
 
 .toc {
-    background-color: #B0E0E6;
-    border: 2px solid #4682B4;
+    background-color: 
+#B0E0E6;
+    border: 2px solid 
+#4682B4;
     padding: 10px;
     display: inline-block;
     margin: 1em 0;
@@ -64,8 +73,10 @@ p {
 .infobox {
     float: right;
     margin: 0 0 1em 1em;
-    background-color: #FFDAB9;
-    border: 2px solid #FFA07A;
+    background-color: 
+#FFDAB9;
+    border: 2px solid 
+#FFA07A;
     padding: 10px;
     width: 270px;
     font-size: 0.9em;
@@ -73,32 +84,41 @@ p {
 }
 
 a {
-    color: #FF4500;
+    color: 
+#FF4500;
     text-decoration: none;
     font-weight: bold;
 }
 
 a:hover {
     text-decoration: underline;
-    color: #DC143C;
+    color: 
+#DC143C;
 }
 
 .collapsible, .accordion {
-    background-color: #E6E6FA;
-    border: 2px solid #9370DB;
-    color: #4B0082;
+    background-color: 
+#E6E6FA;
+    border: 2px solid 
+#9370DB;
+    color: 
+#4B0082;
     padding: 10px;
     border-radius: 5px;
 }
 
 .active, .collapsible:hover, .accordion:hover {
-    background-color: #D8BFD8;
+    background-color: 
+#D8BFD8;
 }
 /* Estilos generales del acordeón */
 .accordion {
-    background-color: #E6E6FA;
-    border: 2px solid #9370DB;
-    color: #4B0082;
+    background-color: 
+#E6E6FA;
+    border: 2px solid 
+#9370DB;
+    color: 
+#4B0082;
     cursor: pointer;
     padding: 12px 15px;
     width: 100%;
@@ -112,12 +132,13 @@ a:hover {
 }
 
 .active, .accordion:hover {
-    background-color: #D8BFD8;
+    background-color: 
+#D8BFD8;
 }
 
-/* Agregar flecha indicadora */
+
 .accordion:after {
-    content: '\002B'; /* Signo de más */
+    content: '\002B'; 
     color: #4B0082;
     font-weight: bold;
     float: right;
@@ -130,42 +151,82 @@ a:hover {
 
 /* Panel que se muestra/oculta */
 .panel {
-    padding: 0;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
-    background-color: #FFF0F5;
-    border-left: 2px solid #9370DB;
-    border-right: 2px solid #9370DB;
-    border-bottom: 2px solid #9370DB;
+    background-color: 
+#FFF0F5;
+    border-left: 2px solid 
+#9370DB;
+    border-right: 2px solid 
+#9370DB;
+    border-bottom: 2px solid 
+#9370DB;
     border-radius: 0 0 5px 5px;
     margin-top: -5px;
     margin-bottom: 10px;
 }
 
-/* Contenido dentro del panel */
-.panel div, .panel p, .panel ul {
+
+.panel p, .panel ul {
     padding: 10px 15px;
     margin: 0;
+
+}
+
+.panel{
+    display: flex;
+    flex-direction: row;
 }
 
 /* Estilos para los contenedores de video */
 .video-container {
-    margin: 10px 0;
-    padding: 10px;
-    background-color: #F0FFFF;
+    
     border-radius: 5px;
-    border: 1px solid #ADD8E6;
+    
 }
 
-.video-container h4 {
-    margin-top: 0;
-    color: #4169E1;
+.h4 {
+    color: #d4461f;
 }
+
+li{
+    list-style: none;
+    font-size: 20px;
+    
+}
+
+
 
 /* Estilo para los controles de video */
 video {
     max-width: 100%;
     border: 2px solid #9370DB;
     border-radius: 5px;
+    margin: 30px;
+   
 }
+/* Contenedor para videos en fila - MEJORADO */
+.videos-row {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 15px 0;
+    justify-content: space-between;
+}
+
+/* Estilo específico para los video-container cuando están en una fila */
+.videos-row .video-container {
+    flex: 0 0 calc(50% - 15px); /* Para dos videos por fila */
+    max-width: calc(50% - 15px);
+    margin: 0 0 15px 0; /* Quitamos margen horizontal y mantenemos el vertical */
+}
+
+/* Para tres videos por fila */
+.videos-row.three-videos .video-container {
+    flex: 0 0 calc(33% - 20px);
+    max-width: calc(33% - 20px);
+}
+
+
