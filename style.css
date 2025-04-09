@@ -5,7 +5,7 @@ body {
     background-repeat: no-repeat;
     background-position: center center; /* Centrar la imagen */
     background-size: cover; /* La imagen cubrirá toda la pantalla */
-    height: 110vh; /* Asegura que el body tenga el 100% del alto de la pantalla */
+    height: 130vh; /* Asegura que el body tenga el 100% del alto de la pantalla */
     margin: 0;
     padding: 0;
 }
@@ -194,10 +194,6 @@ a:hover {
     color: #d4461f;
 }
 
-
-
-
-
 /* Estilo para los controles de video */
 video {
     max-width: 100%;
@@ -335,6 +331,7 @@ body {
   /* Mejoras para videos */
   .video-container {
     transition: transform 0.3s ease;
+    
   }
   
   .video-container:hover {
@@ -420,3 +417,5 @@ body {
       box-sizing: border-box;
     }
   }
+  
+  /* Agregar líneas separatorias entre videos */

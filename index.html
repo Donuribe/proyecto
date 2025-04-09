@@ -1,165 +1,184 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>proyecto de aprendisaje </title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <title>Bienvenidos - Juegos y Rondas: Estrategia Pedagógica</title>
+    <style>
+        body {
+            font-family: 'Liberation Serif', 'Linux Libertine', Georgia, Times, serif;
+            background-color: #FFE4E1;
+            background-image: url('imagenes/nubes-rosadas-nubes-sobre-fondo-morado_863013-26965.jpg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-<body>
-    <div class="container">
-        <div class="header">
-            <h1>esto es un trabajo de kata </h1>
-            <p>sobre como ser una gran profesora </p>
-        </div>
+        .portal-container {
+            max-width: 800px;
+            width: 90%;
+            background-color: #FFF8DC;
+            padding: 30px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            text-align: center;
+            animation: fadeIn 1.5s ease;
+        }
 
-        <div class="infobox">
-            <div class="infobox-title">blog informativo </div>
-            <div class="infobox-image">
-                <img src="imagenes/WhatsApp Image 2025-04-02 at 6.07.34 PM.jpg" height="250" width="270" />
-                <p>Normal superior de ocaña </p>
-            </div>
-            <table>
-                <tr>
-                    <th>Información:</th>
-                    <td>juegos y rondas: estrategia pedagógica </td>
-                </tr>
-                <tr>
-                    <th>Creación:</th>
-                    <td>5/04/2025</td>
-                </tr>
-                <tr>
-                    <th>Autores:</th>
-                    <td colspan="2">Katherin Gabriela Plata Torres<br>Sheril Natalia Sánchez Guerrero</td>
-                </tr>
-                <tr>
-                    <th>Categoría:</th>
-                    <td>preescolar y basica primaria</td>
-                </tr>
-            </table>
-        </div>
+        .header {
+            border-bottom: 3px solid #FFB6C1;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
 
-        <p>A lo largo de la historia, el juego y la ronda han sido herramientas fundamentales para transformar el proceso de aprendizaje en una experiencia viva, dinámica y profundamente significativa. En este artículo, dirigido a docentes y padres de familia, exploraremos cómo estas estrategias pedagógicas no solo impulsan el desarrollo psicomotriz en niños de básica primaria, sino que también fomentan un aprendizaje participativo y colaborativo que se traduce en beneficios duraderos.</p>
+        h1 {
+            font-family: 'Linux Libertine', Georgia, Times, serif;
+            font-weight: normal;
+            color: #FF69B4;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
 
-        <div class="toc">
-            <div class="toc-title">Contenido</div>
-            <ul>
-                <li>1. <a href="#listas-desplegables">Listas desplegables</a></li> 
-                <ul>
-                    <li>1.1 <a href="#blog-de-informacion">blog de informacion</a></li>
-                    <li>1.2 <a href="#seccion-de-videos">seccion de videos</a></li>
-                    <li>1.3 <a href="#seccion-de-recomendaciones">seccion de recomendaciones</a></li>
-                </ul>
-            </ul>
-        </div>
+        .subtitle {
+            font-size: 1.4em;
+            color: #FF8C00;
+            margin-bottom: 30px;
+        }
 
-        <h3 id="listas-desplegables">1. desplegable</h3>
-        <img src="imagenes/WhatsApp Image 2025-04-02 at 5.11.54 PM.png" alt="Niños jugando" width="300" height="300" />
-        <img src="imagenes/Made with insMind-WhatsApp Image 2025-04-02 at 5.11.57 PM.png" alt="Imagen de WhatsApp" width="300" height="300" />
+        .authors {
+            font-style: italic;
+            color: #32CD32;
+            margin-bottom: 25px;
+        }
 
-        <button id="blog-de-informacion" class="accordion">blog de información</button>
-        <div class="panel">
-            <li><a href="https://sites.google.com/view/blockformativoks/inicio">estrategia dinamica de juego y ronda</a></li>
-        </div>
+        .portal-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 10px;
+            border: 3px solid #FFB6C1;
+            margin: 20px auto;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+        }
 
-        <button id="seccion-de-videos" class="accordion">Sección de videos</button>
-        <div class="panel">
-            <div class="videos-row three-videos">
-                <div class="video-container">
-                    <video width="250" height="150" controls>
-                        <source src="videos/ALFABETO HUMANO _ Juegos .mp4" type="video/mp4">
-                       
-                    </video>
-                </div>
-                
-                <div class="video-container">
-                    <video width="250" height="150" controls>
-                        <source src="videos/AROS MUSICALES _ Juegos.mp4" type="video/mp4">
-                       
-                    </video>
-                </div>
-                
-                <div class="video-container">
-                    
-                    <video width="250" height="150" controls>
-                        <source src="videos/ATRAPA EL RATÓN _ Juegos .mp4" type="video/mp4">
-                        
-                    </video>
-                </div>
-                <div class="video-container">
-                    
-                    <video width="250" height="150" controls>
-                        <source src="videos/dance.mp4" type="video/mp4">
-                      
-                    </video>
-                </div>
-                <div class="video-container">
-                    <video width="250" height="150" controls>
-                        <source src="videos/Juego didáctico casero _PALABRAS LOCAS_. Reforzamos ortografía y vocabulario..mp4" type="video/mp4">
-                        
-                    </video>
-                </div>
-                <div class="video-container">
-                    <video width="250" height="150" controls>
-                        <source src="videos/Juegos para aprender Inglés (Actividades Lúdicas).mp4" type="video/mp4">
-                        
-                    </video>
-                </div>
-                <div class="video-container">
-                    <video width="250" height="150" controls>
-                        <source src="videos/Los 9 JUEGOS más DIVERTIDOS para tus Clases de EDUCACIÓN FÍSICA 2025.mp4" type="video/mp4">
-                       
-                    </video>
-                </div>
-                <div class="video-container">
-                    <video width="250" height="150" controls>
-                        <source src="videos/Luli Pampín - LA RONDA DE LULITA 💜..mp4" type="video/mp4">
-                       
-                    </video>
-                </div>
-                <div class="video-container">
-                    <video width="250" height="150" controls>
-                        <source src="videos/PERSIGUE AL AGENTE SECRETO _ Juegos .mp4" type="video/mp4">
-                       
-                    </video>
-                </div>
-                <div class="video-container">
-                    <video width="250" height="150" controls>
-                        <source src="videos/Ronda gira gira .mp4" type="video/mp4">
-                       
-                    </video>
-                </div>
-                <div class="video-container">
-                    <video width="250" height="150" controls>
-                        <source src="videos//SALVA LAS ESTATUAS _ Juegos .mp4" type="video/mp4">
-                       
-                    </video>
-                </div>
-            </div>
-        
-        </div>
-        
+        .portal-image:hover {
+            transform: scale(1.03);
+        }
 
-        <button id="seccion-de-recomendaciones" class="accordion">Sección de recomendaciones</button>
-        <div class="panel">
-            <h3>PARA DOCENTES</h3>
-            <ul>
-                <li>Planificación intencionada: Integre sesiones de juego y actividades en ronda de forma regular en la planificación curricular. Diseñe actividades que no solo involucren movimiento, sino también retos cognitivos y sociales.</li>
-                <li>Ambientes seguros y estimulantes: Asegúrese de que el espacio físico permita el libre movimiento y la interacción, minimizando riesgos y fomentando la exploración.</li>
-                <li>Capacitación continua: Participe en talleres y cursos sobre metodologías lúdicas. Conocer las últimas tendencias y estudios en educación puede ayudar a adaptar las estrategias a las necesidades específicas de sus estudiantes.</li>
-            </ul>
+        .enter-button {
+            display: inline-block;
+            background-color: #FF69B4;
+            color: white;
+            font-size: 1.2em;
+            padding: 15px 40px;
+            border-radius: 30px;
+            border: none;
+            margin-top: 25px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .enter-button:hover {
+            background-color: #FF1493;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .date {
+            margin-top: 20px;
+            color: #4B0082;
+            font-weight: bold;
+        }
+
+        .school-name {
+            font-size: 1.1em;
+            color: #4B0082;
+            margin-top: 15px;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .portal-container {
+                width: 85%;
+                padding: 20px;
+            }
             
-            <h3>PARA PADRES DE FAMILIA</h3>
-            <ul>
-                <li>Promueva actividades en casa: Fomente el juego en familia. Organice rondas, juegos al aire libre y dinámicas que inviten a sus hijos a moverse y relacionarse.</li>
-                <li>Colaboración con la escuela: Esté en constante comunicación con los docentes para entender y reforzar las metodologías que se aplican en el aula. La coherencia entre el hogar y la escuela es vital para el desarrollo integral del niño.</li>
-                <li>Observación y apoyo: Preste atención a cómo su hijo participa en estas actividades. El juego puede revelar mucho sobre sus habilidades, intereses y áreas en las que podría necesitar mayor apoyo.</li>
-            </ul>
+            h1 {
+                font-size: 2em;
+            }
+            
+            .subtitle {
+                font-size: 1.2em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .portal-container {
+                width: 90%;
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 1.7em;
+            }
+            
+            .subtitle {
+                font-size: 1.1em;
+            }
+            
+            .enter-button {
+                padding: 12px 30px;
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="portal-container">
+        <div class="header">
+            <h1>Juegos y Rondas</h1>
+            <div class="subtitle">Estrategia Pedagógica para el Aprendizaje</div>
         </div>
+        
+        <div class="authors">
+            Por: Katherin Gabriela Plata Torres & Sheril Natalia Sánchez Guerrero
+        </div>
+        
+        <img src="imagenes/WhatsApp Image 2025-04-09 at 6.37.20 PM.jpeg" alt="Normal Superior de Ocaña" class="portal-image">
+        
+        <div class="school-name">
+            Normal Superior de Ocaña
+        </div>
+        
+        <div class="date">
+            2025
+        </div>
+        
+        <a href="main.html" class="enter-button">
+            Ingresar al Blog
+        </a>
     </div>
-    
-    <script type="module" src="blog.js"></script>
+
+    <script>
+        // Redirección automática después de 10 segundos (opcional)
+        // setTimeout(function() {
+        //     window.location.href = "index.html";
+        // }, 10000);
+    </script>
 </body>
 </html>
