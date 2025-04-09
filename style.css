@@ -1,16 +1,20 @@
 body {
     font-family: 'Liberation Serif', 'Linux Libertine', Georgia, Times, serif;
-    background-color: 
-#FFE4E1;
-    background-image: url('nubes.jpeg'); /* Imagen de marca de agua */
+    background-color: #FFE4E1;
+    background-image: url('imagenes/nubes-rosadas-nubes-sobre-fondo-morado_863013-26965.jpg'); /* Imagen de fondo */
     background-repeat: no-repeat;
-    background-position: left;
-    background-size: left 50%;
-    color: #333;
-    line-height: 1.6;
+    background-position: center center; /* Centrar la imagen */
+    background-size: cover; /* La imagen cubrirá toda la pantalla */
+    height: 200vh; /* Asegura que el body tenga el 100% del alto de la pantalla */
     margin: 0;
     padding: 0;
 }
+.background-attachment{
+    background-attachment: fixed;
+
+
+}
+
 
 .container {
     max-width: 1000px;
@@ -224,5 +228,12 @@ video {
     flex: 0 0 calc(33% - 20px);
     max-width: calc(33% - 20px);
 }
+@media (max-width: 768px) {
+    /* Estilos para tablets y dispositivos más pequeños */
+  }
+  
+  @media (max-width: 480px) {
+    /* Estilos para smartphones */
+  }
 
 
